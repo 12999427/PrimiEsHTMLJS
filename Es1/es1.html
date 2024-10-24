@@ -8,8 +8,12 @@
 <body>
     <div id="text"></div>
     <script type="text/javascript">
-        let anno = parseInt(prompt("Metti l'anno"))
-        let bisestile = anno%400 == 0 || (anno%4 == 0 && anno%100 != 0);
-        document.getElementById("text").innerHTML = bisestile ? `l'anno ${anno} è bisestile` : `l'anno ${anno} non è bisestile`
+        let anno = parseInt(prompt("Metti l'anno"));
+        if (isNaN(anno)){
+            document.getElementById("text").innerHTML = "Non valido";
+        } else {
+            let bisestile = anno%400 == 0 || (anno%4 == 0 && anno%100 != 0);
+            document.getElementById("text").innerHTML = bisestile ? `l'anno ${anno} è bisestile` : `l'anno ${anno} non è bisestile`;
+        }
     </script>
 </body>
