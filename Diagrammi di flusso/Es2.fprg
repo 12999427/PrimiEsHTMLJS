@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="12999427"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-24 10:10:10 "/>
+        <attribute name="created" value="MTI5OTk0Mjc7SU5GTzEtMjM7MjAyNC0xMC0yNDsiMTA6MDM6MjMgIjsyMTAx"/>
+        <attribute name="edited" value="MTI5OTk0Mjc7SU5GTzEtMjM7MjAyNC0xMC0yNDsiMTA6MTA6MTAgIjsyOzIyMDQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="eta" type="Integer" array="False" size=""/>
+            <input variable="eta"/>
+            <if expression="eta&gt;=25">
+                <then>
+                    <output expression="&quot;puoi votare il senato&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;non puoi votare il senato&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

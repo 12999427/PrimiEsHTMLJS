@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Età
+    </title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div id="text"></div>
+    <script type="text/javascript">
+        let età = parseInt(prompt("inserisci età"))
+        let puovotare = età>=25
+        document.getElementById("text").innerHTML = puovotare ? "Si, puoi votare" : "No, sei troppo giovane"
+    </script>
+</body>

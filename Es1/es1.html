@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Anno bisestile
+    </title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div id="text"></div>
+    <script type="text/javascript">
+        let anno = parseInt(prompt("Metti l'anno"))
+        let bisestile = anno%400 == 0 || (anno%4 == 0 && anno%100 != 0);
+        document.getElementById("text").innerHTML = bisestile ? `l'anno ${anno} è bisestile` : `l'anno ${anno} non è bisestile`
+    </script>
+</body>
